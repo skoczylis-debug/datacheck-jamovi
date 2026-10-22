@@ -1,0 +1,83 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,ResponseId,Q1,Q2,Q12_1,Q12_2,Q12_3,Q12_4,Q20,Q13
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Response ID,How old are you?,How much do you trust the police? (1-5),What is your ethnicity? Select all that apply - Pakistani,What is your ethnicity? Select all that apply - Indian,What is your ethnicity? Select all that apply - Bangladeshi,What is your ethnicity? Select all that apply - White British,Which option did you choose?,Which of these best describes your Asian background?
+"{""ImportId"":""StartDate""}","{""ImportId"":""EndDate""}","{""ImportId"":""Status""}","{""ImportId"":""IPAddress""}","{""ImportId"":""Progress""}","{""ImportId"":""Duration (in seconds)""}","{""ImportId"":""Finished""}","{""ImportId"":""ResponseId""}","{""ImportId"":""Q1""}","{""ImportId"":""Q2""}","{""ImportId"":""Q12_1""}","{""ImportId"":""Q12_2""}","{""ImportId"":""Q12_3""}","{""ImportId"":""Q12_4""}","{""ImportId"":""Q20""}","{""ImportId"":""QID13""}"
+2019-05-03 10:00,2019-05-03 11:00,IP Address,81.2.0.0,100,748,True,R_00000,24,3,,,,White British,-99,
+2019-05-03 10:01,2019-05-03 11:01,IP Address,81.2.1.3,100,271,True,R_00001,33,1,Pakistani,,Bangladeshi,White British,-99,Indian
+2019-05-03 10:02,2019-05-03 11:02,IP Address,81.2.2.6,100,842,True,R_00002,55,1,,,,White British,-99,
+2019-05-03 10:03,2019-05-03 11:03,IP Address,81.2.3.9,100,336,True,R_00003,36,4,,Indian,,White British,Skip T&Cs,Asian other
+2019-05-03 10:04,2019-05-03 11:04,IP Address,81.2.4.12,100,305,True,R_00004,55,5,,,,,-99,
+2019-05-03 10:05,2019-05-03 11:05,IP Address,81.2.5.15,100,833,True,R_00005,31,4,,,,,-99,
+2019-05-03 10:06,2019-05-03 11:06,IP Address,81.2.6.18,100,570,True,R_00006,37,2,,,,,Skip T&Cs,
+2019-05-03 10:07,2019-05-03 11:07,IP Address,81.2.7.21,100,551,True,R_00007,64,4,,,,White British,View Price Details,
+2019-05-03 10:08,2019-05-03 11:08,IP Address,81.2.8.24,100,550,True,R_00008,27,4,,Indian,,White British,View Price Details,Asian other
+2019-05-03 10:09,2019-05-03 11:09,IP Address,81.2.9.27,100,521,True,R_00009,39,3,Pakistani,,,White British,-99,Indian
+2019-05-03 10:10,2019-05-03 11:10,IP Address,81.2.10.30,100,476,True,R_00010,48,1,,,Bangladeshi,White British,Skip T&Cs,Bangladeshi
+2019-05-03 10:11,2019-05-03 11:11,IP Address,81.2.11.33,100,656,True,R_00011,36,4,,,,,-99,
+2019-05-03 10:12,2019-05-03 11:12,IP Address,81.2.12.36,100,705,True,R_00012,21,2,,,,,View Price Details,
+2019-05-03 10:13,2019-05-03 11:13,IP Address,81.2.13.39,100,282,True,R_00013,28,4,Pakistani,,,,View Price Details,Asian other
+2019-05-03 10:14,2019-05-03 11:14,IP Address,81.2.14.42,100,485,True,R_00014,63,4,,,,,View Price Details,
+2019-05-03 10:15,2019-05-03 11:15,IP Address,81.2.15.45,100,354,True,R_00015,32,2,,,,White British,Skip T&Cs,
+2019-05-03 10:16,2019-05-03 11:16,IP Address,81.2.16.48,100,629,True,R_00016,52,3,,,,White British,-99,
+2019-05-03 10:17,2019-05-03 11:17,IP Address,81.2.17.51,100,832,True,R_00017,59,1,,,,,View Price Details,
+2019-05-03 10:18,2019-05-03 11:18,IP Address,81.2.18.54,100,601,True,R_00018,43,4,,,,,View Price Details,
+2019-05-03 10:19,2019-05-03 11:19,IP Address,81.2.19.57,100,413,True,R_00019,46,2,Pakistani,,Bangladeshi,White British,Skip T&Cs,Chinese
+2019-05-03 10:20,2019-05-03 11:20,IP Address,81.2.20.60,100,303,True,R_00020,41,5,,Indian,Bangladeshi,White British,Skip T&Cs,Asian other
+2019-05-03 10:21,2019-05-03 11:21,IP Address,81.2.21.63,100,555,True,R_00021,56,3,Pakistani,,,,View Price Details,Pakistani
+2019-05-03 10:22,2019-05-03 11:22,IP Address,81.2.22.66,100,695,True,R_00022,37,1,Pakistani,,,White British,Skip T&Cs,Asian other
+2019-05-03 10:23,2019-05-03 11:23,IP Address,81.2.23.69,100,365,True,R_00023,51,1,Pakistani,,,,Skip T&Cs,Pakistani
+2019-05-03 10:24,2019-05-03 11:24,IP Address,81.2.24.72,100,227,True,R_00024,66,5,,,,White British,View Price Details,
+2019-05-03 10:25,2019-05-03 11:25,IP Address,81.2.25.75,100,575,True,R_00025,28,3,,,,White British,Skip T&Cs,
+2019-05-03 10:26,2019-05-03 11:26,IP Address,81.2.26.78,100,399,True,R_00026,69,2,,,,White British,View Price Details,
+2019-05-03 10:27,2019-05-03 11:27,IP Address,81.2.27.81,100,229,True,R_00027,19,3,,,,White British,View Price Details,
+2019-05-03 10:28,2019-05-03 11:28,IP Address,81.2.28.84,100,557,True,R_00028,41,1,,,,White British,Skip T&Cs,
+2019-05-03 10:29,2019-05-03 11:29,IP Address,81.2.29.87,100,824,True,R_00029,18,4,Pakistani,,,White British,-99,Chinese
+2019-05-03 10:30,2019-05-03 11:30,IP Address,81.2.30.90,100,597,True,R_00030,68,2,,,,White British,View Price Details,
+2019-05-03 10:31,2019-05-03 11:31,IP Address,81.2.31.93,100,605,True,R_00031,47,4,,,,White British,-99,
+2019-05-03 10:32,2019-05-03 11:32,IP Address,81.2.32.96,100,354,True,R_00032,55,4,,,,White British,-99,
+2019-05-03 10:33,2019-05-03 11:33,IP Address,81.2.33.99,100,558,True,R_00033,27,5,,,,,-99,
+2019-05-03 10:34,2019-05-03 11:34,IP Address,81.2.34.102,100,739,True,R_00034,65,2,Pakistani,Indian,,,View Price Details,Bangladeshi
+2019-05-03 10:35,2019-05-03 11:35,IP Address,81.2.35.105,100,417,True,R_00035,36,5,,,,White British,Skip T&Cs,
+2019-05-03 10:36,2019-05-03 11:36,IP Address,81.2.36.108,100,262,True,R_00036,65,3,,,,,View Price Details,
+2019-05-03 10:37,2019-05-03 11:37,IP Address,81.2.37.111,100,713,True,R_00037,26,5,,,,,Skip T&Cs,
+2019-05-03 10:38,2019-05-03 11:38,IP Address,81.2.38.114,100,204,True,R_00038,67,2,,Indian,,White British,Skip T&Cs,Asian other
+2019-05-03 10:39,2019-05-03 11:39,IP Address,81.2.39.117,100,898,True,R_00039,51,5,Pakistani,,,White British,-99,Indian
+2019-05-03 10:40,2019-05-03 11:40,IP Address,81.2.40.120,100,395,True,R_00040,35,1,,,,White British,Skip T&Cs,
+2019-05-03 10:41,2019-05-03 11:41,IP Address,81.2.41.123,100,653,True,R_00041,38,5,,,,,-99,
+2019-05-03 10:42,2019-05-03 11:42,IP Address,81.2.42.126,100,689,True,R_00042,50,2,,,,White British,-99,
+2019-05-03 10:43,2019-05-03 11:43,IP Address,81.2.43.129,100,407,True,R_00043,46,2,,,,,View Price Details,
+2019-05-03 10:44,2019-05-03 11:44,IP Address,81.2.44.132,100,274,True,R_00044,31,3,Pakistani,,Bangladeshi,White British,Skip T&Cs,Indian
+2019-05-03 10:45,2019-05-03 11:45,IP Address,81.2.45.135,100,346,True,R_00045,34,2,,,,,View Price Details,
+2019-05-03 10:46,2019-05-03 11:46,IP Address,81.2.46.138,100,883,True,R_00046,32,2,,,,White British,-99,
+2019-05-03 10:47,2019-05-03 11:47,IP Address,81.2.47.141,100,526,True,R_00047,23,3,,,,White British,Skip T&Cs,
+2019-05-03 10:48,2019-05-03 11:48,IP Address,81.2.48.144,100,729,True,R_00048,57,3,,,,,-99,
+2019-05-03 10:49,2019-05-03 11:49,IP Address,81.2.49.147,100,307,True,R_00049,23,3,,Indian,,White British,View Price Details,Chinese
+2019-05-03 10:50,2019-05-03 11:50,IP Address,81.2.50.150,100,632,True,R_00050,61,3,Pakistani,,,White British,View Price Details,Asian other
+2019-05-03 10:51,2019-05-03 11:51,IP Address,81.2.51.153,100,291,True,R_00051,35,1,Pakistani,,,,-99,Asian other
+2019-05-03 10:52,2019-05-03 11:52,IP Address,81.2.52.156,100,290,True,R_00052,69,3,,,,White British,Skip T&Cs,
+2019-05-03 10:53,2019-05-03 11:53,IP Address,81.2.53.159,100,211,True,R_00053,39,5,,,,White British,View Price Details,
+2019-05-03 10:54,2019-05-03 11:54,IP Address,81.2.54.162,100,444,True,R_00054,25,2,,,,White British,View Price Details,
+2019-05-03 10:55,2019-05-03 11:55,IP Address,81.2.55.165,100,410,True,R_00055,36,4,Pakistani,,,White British,-99,Chinese
+2019-05-03 10:56,2019-05-03 11:56,IP Address,81.2.56.168,100,237,True,R_00056,18,1,,,,,-99,
+2019-05-03 10:57,2019-05-03 11:57,IP Address,81.2.57.171,100,657,True,R_00057,24,4,,,,White British,-99,
+2019-05-03 10:58,2019-05-03 11:58,IP Address,81.2.58.174,100,420,True,R_00058,32,3,,,,White British,Skip T&Cs,
+2019-05-03 10:59,2019-05-03 11:59,IP Address,81.2.59.177,100,555,True,R_00059,21,2,,,,White British,Skip T&Cs,
+2019-05-03 10:00,2019-05-03 11:00,IP Address,81.2.60.180,100,286,True,R_00060,60,4,Pakistani,,,White British,-99,Chinese
+2019-05-03 10:01,2019-05-03 11:01,IP Address,81.2.61.183,100,670,True,R_00061,29,2,,,,,View Price Details,
+2019-05-03 10:02,2019-05-03 11:02,IP Address,81.2.62.186,100,760,True,R_00062,38,2,,,,,Skip T&Cs,
+2019-05-03 10:03,2019-05-03 11:03,IP Address,81.2.63.189,100,590,True,R_00063,23,4,,,,White British,View Price Details,
+2019-05-03 10:04,2019-05-03 11:04,IP Address,81.2.64.192,100,470,True,R_00064,70,1,,,,White British,Skip T&Cs,
+2019-05-03 10:05,2019-05-03 11:05,IP Address,81.2.65.195,100,438,True,R_00065,23,5,,Indian,Bangladeshi,White British,-99,Indian
+2019-05-03 10:06,2019-05-03 11:06,IP Address,81.2.66.198,100,810,True,R_00066,42,3,,,,,-99,
+2019-05-03 10:07,2019-05-03 11:07,IP Address,81.2.67.201,100,244,True,R_00067,70,5,,,,,-99,
+2019-05-03 10:08,2019-05-03 11:08,IP Address,81.2.68.204,100,716,True,R_00068,54,1,,,,,-99,
+2019-05-03 10:09,2019-05-03 11:09,IP Address,81.2.69.207,100,435,True,R_00069,23,1,,,,,Skip T&Cs,
+2019-05-03 10:10,2019-05-03 11:10,IP Address,81.2.70.210,100,771,True,R_00070,21,1,,,,,-99,
+2019-05-03 10:11,2019-05-03 11:11,IP Address,81.2.71.213,100,271,True,R_00071,65,5,,,,White British,-99,
+2019-05-03 10:12,2019-05-03 11:12,IP Address,81.2.72.216,100,276,True,R_00072,34,2,Pakistani,,,White British,-99,Indian
+2019-05-03 10:13,2019-05-03 11:13,IP Address,81.2.73.219,100,591,True,R_00073,22,4,,,,White British,-99,
+2019-05-03 10:14,2019-05-03 11:14,IP Address,81.2.74.222,100,814,True,R_00074,27,3,,Indian,,White British,View Price Details,Indian
+2019-05-03 10:15,2019-05-03 11:15,IP Address,81.2.75.225,100,693,True,R_00075,21,4,,,,White British,View Price Details,
+2019-05-03 10:16,2019-05-03 11:16,IP Address,81.2.76.228,100,728,True,R_00076,36,4,,Indian,,White British,View Price Details,Asian other
+2019-05-03 10:17,2019-05-03 11:17,IP Address,81.2.77.231,100,287,True,R_00077,48,1,,Indian,,White British,View Price Details,Chinese
+2019-05-03 10:18,2019-05-03 11:18,IP Address,81.2.78.234,100,475,True,R_00078,42,2,,,,White British,Skip T&Cs,
+2019-05-03 10:19,2019-05-03 11:19,IP Address,81.2.79.237,100,568,True,R_00079,26,5,Pakistani,Indian,,White British,-99,Pakistani

@@ -1,0 +1,114 @@
+---
+name:  audit
+title: Data Check
+menuGroup: Data Check
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: vars
+      title: Variables to check
+      type: Variables
+      suggested:
+        - continuous
+        - nominal
+        - ordinal
+      permitted:
+        - numeric
+        - factor
+        - id
+
+    - name: id
+      title: ID variable (optional)
+      type: Variable
+      suggested:
+        - id
+        - nominal
+      permitted:
+        - numeric
+        - factor
+        - id
+
+    - name: keep
+      title: Other columns to keep in the new dataset
+      type: Variables
+      permitted:
+        - numeric
+        - factor
+        - id
+
+    - name: showCharts
+      title: Charts for variables with alerts
+      type: Bool
+      default: false
+
+    - name: showMissing
+      title: Missing data report (map and tests)
+      type: Bool
+      default: false
+
+    - name: showCorr
+      title: Near-duplicate variables
+      type: Bool
+      default: false
+
+    - name: fixes
+      title: Decisions for each value
+      type: Array
+      default: null
+      template:
+        type: Group
+        elements:
+          - name: var
+            type: String
+          - name: head
+            type: String
+          - name: value
+            type: String
+          - name: sug
+            type: String
+          - name: to
+            type: String
+
+    - name: cleanOV
+      title: Add cleaned columns to this spreadsheet
+      type: Output
+
+    - name: allCols
+      title: Add all other columns
+      type: Bool
+      default: false
+
+    - name: tidyNames
+      title: Use tidy variable names (e.g. age_years)
+      type: Bool
+      default: true
+
+    - name: dropAdmin
+      title: Leave out survey admin columns (dates, IP address, progress…)
+      type: Bool
+      default: true
+
+    - name: dropDup
+      title: Remove duplicate rows (keep the first)
+      type: Bool
+      default: true
+
+    - name: dropEmpty
+      title: Remove empty rows
+      type: Bool
+      default: true
+
+    - name: openData
+      title: Open cleaned data in a new jamovi window
+      type: Action
+      action: open
+
+    - name: exportData
+      title: Open cleaned data as a CSV file
+      type: Action
+      action: openExternal
+...

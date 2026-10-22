@@ -1,0 +1,16 @@
+Package: datacheck
+Type: Package
+Title: Data Check: clean raw data before analysis
+Version: 1.0.0
+Author: Joshua Skoczylis
+Maintainer: Joshua Skoczylis <skoczylis@gmail.com>
+Description: A jamovi module that helps students clean raw data before
+    analysis. It reports common problems (inconsistent labels, missing-value
+    codes, numbers stored as text, survey export quirks), lets the student
+    decide what each value becomes, and creates cleaned variables or a new
+    cleaned dataset.
+License: GPL (>= 2)
+Imports:
+    jmvcore (>= 0.8.5),
+    R6,
+    ggplot2

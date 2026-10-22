@@ -1,0 +1,266 @@
+---
+name:  audit
+title: Data Check
+jrs: '1.1'
+
+items:
+    - name: intro
+      title: How this works
+      type: Text
+
+    - name: step1
+      title: 'Step 1: Report'
+      type: Group
+      items:
+        - name: overview
+          title: Overview
+          type: Table
+          rows: 1
+          columns:
+            - name: rows
+              title: Rows
+              type: integer
+            - name: vars
+              title: Variables
+              type: integer
+            - name: missing
+              title: Missing cells
+              type: integer
+            - name: pmissing
+              title: "% missing"
+              type: text
+            - name: duprows
+              title: Duplicate rows
+              type: text
+            - name: emptyrows
+              title: Empty rows
+              type: integer
+
+        - name: summary
+          title: Variables
+          type: Table
+          rows: 0
+          columns:
+            - name: var
+              title: Variable
+              type: text
+            - name: stored
+              title: Looks like
+              type: text
+            - name: valid
+              title: Valid
+              type: integer
+            - name: pmiss
+              title: "% missing"
+              type: text
+            - name: distinct
+              title: Distinct
+              type: integer
+            - name: nissues
+              title: Alerts
+              type: integer
+
+        - name: alerts
+          title: Alerts
+          type: Table
+          rows: 0
+          columns:
+            - name: var
+              title: Variable
+              type: text
+            - name: issue
+              title: Alert
+              type: text
+            - name: detail
+              title: Values
+              type: text
+            - name: rows
+              title: Rows
+              type: text
+
+        - name: guide
+          title: What the alerts mean
+          type: Text
+
+        - name: missingData
+          title: Missing data
+          type: Group
+          visible: (showMissing)
+          items:
+            - name: missingMap
+              title: Where the gaps are
+              type: Image
+              width: 600
+              height: 380
+              renderFun: .plotMissing
+              clearWith:
+                - vars
+                - id
+                - fixes
+
+            - name: mcar
+              title: "Little's MCAR test (numeric variables)"
+              type: Table
+              rows: 1
+              columns:
+                - name: chi2
+                  title: "χ²"
+                  type: number
+                - name: df
+                  title: df
+                  type: integer
+                - name: p
+                  title: p
+                  type: number
+                  format: zto,pvalue
+                - name: verdict
+                  title: What it suggests
+                  type: text
+
+            - name: missVars
+              title: Is each variable missing at random?
+              type: Table
+              rows: 0
+              columns:
+                - name: var
+                  title: Variable
+                  type: text
+                - name: nmiss
+                  title: Missing
+                  type: integer
+                - name: pmiss
+                  title: "%"
+                  type: text
+                - name: verdict
+                  title: Finding
+                  type: text
+
+            - name: missLinks
+              title: What the gaps are linked to
+              type: Table
+              rows: 0
+              columns:
+                - name: var
+                  title: Missing variable
+                  type: text
+                - name: with
+                  title: Linked to
+                  type: text
+                - name: detail
+                  title: Difference
+                  type: text
+                - name: p
+                  title: p
+                  type: number
+                  format: zto,pvalue
+
+            - name: missText
+              title: How to read this
+              type: Text
+
+        - name: corrPlot
+          title: How strongly variables are related
+          type: Image
+          width: 560
+          height: 480
+          renderFun: .plotAssoc
+          visible: (showCorr)
+          clearWith:
+            - vars
+            - id
+
+        - name: charts
+          title: Charts
+          type: Array
+          items: (vars)
+          visible: (showCharts)
+          template:
+            title: ($key)
+            type: Image
+            width: 480
+            height: 280
+            renderFun: .plotVar
+            clearWith:
+              - vars
+
+    - name: step2
+      title: 'Step 2: What happens to each value'
+      type: Group
+      items:
+        - name: problems
+          title: Problems with your settings
+          type: Text
+          visible: false
+
+        - name: maps
+          title: Decisions
+          type: Array
+          items: (vars)
+          template:
+            title: ($key)
+            type: Table
+            rows: 0
+            columns:
+              - name: value
+                title: Value in data
+                type: text
+              - name: n
+                title: Rows
+                type: integer
+              - name: becomes
+                title: Becomes
+                type: text
+              - name: why
+                title: Why
+                type: text
+
+    - name: step3
+      title: 'Step 3: Cleaned variables'
+      type: Group
+      items:
+        - name: created
+          title: Created
+          type: Table
+          rows: 0
+          visible: (cleanOV)
+          columns:
+            - name: var
+              title: Original
+              type: text
+            - name: clean
+              title: Cleaned variable
+              type: text
+            - name: changed
+              title: Values changed
+              type: integer
+        - name: newData
+          title: New dataset
+          type: Table
+          rows: 1
+          columns:
+            - name: status
+              title: Status
+              type: text
+            - name: ncols
+              title: Columns
+              type: integer
+            - name: nrows
+              title: Rows
+              type: integer
+            - name: dropped
+              title: Rows removed
+              type: text
+
+        - name: step3text
+          title: ''
+          type: Text
+
+    - name: cleanOV
+      title: Cleaned variables
+      type: Output
+      initInRun: true
+      clearWith:
+        - vars
+        - id
+        - fixes
+...

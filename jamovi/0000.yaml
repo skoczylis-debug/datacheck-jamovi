@@ -1,0 +1,25 @@
+---
+title: Data Check
+name: datacheck
+version: 1.0.0
+jms: '1.0'
+authors:
+  - Joshua Skoczylis
+maintainer: Joshua Skoczylis <skoczylis@gmail.com>
+date: '2026-10-22'
+type: R
+minApp: 28.4.0
+description: >
+  Helps students clean raw data before analysis. Reports common problems
+  (inconsistent labels, missing-value codes, numbers stored as text, survey
+  export quirks), lets the student decide what each value becomes, and creates
+  cleaned variables or a new cleaned dataset.
+analyses:
+  - title: Data Check
+    name: audit
+    ns: datacheck
+    menuGroup: Data Check
+    menuTitle: Data Check
+    menuSubtitle: Find problems before you analyse
+    description: Audits variables for common data problems.
+...
